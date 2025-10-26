@@ -2,6 +2,27 @@
 
 Landing page profissional para Dra. Eduarda Ayres, advogada especialista em Direito de Família.
 
+## 🏷️ Linguagens e Tecnologias
+
+### **Linguagens:**
+- **JavaScript/TypeScript** - Lógica da aplicação
+- **Vue.js** - Componentes e reatividade
+- **CSS/Tailwind CSS** - Estilização e design
+- **HTML** - Estrutura semântica (gerado pelo Nuxt)
+
+### **Frameworks e Bibliotecas:**
+- **Nuxt 3** - Framework Vue.js para renderização SSR/SSG
+- **Vue 3** - Framework JavaScript progressivo
+- **Tailwind CSS** - Framework CSS utilitário
+- **PostCSS** - Processador CSS moderno
+- **Vite** - Build tool rápido e moderno
+- **VueUse Motion** - Animações e transições
+
+### **Ferramentas de Desenvolvimento:**
+- **Node.js** - Runtime JavaScript
+- **npm** - Gerenciador de pacotes
+- **Git** - Controle de versão
+
 ## 🚀 Tecnologias
 
 - **Nuxt 3** - Framework Vue.js
