@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="font-sans text-slate-900">
     <Header />
+    <SideFloatButtons />
     <Hero />
     <main class="space-y-24">
       <Services />
