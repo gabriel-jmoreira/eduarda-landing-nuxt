@@ -37,7 +37,7 @@
                 <div class="text-sm text-white/80">+55 21 98277-2521</div>
               </div>
             </a>
-            <a :href="instagram" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-2xl bg-white/10 hover:bg-white/20 transition">
+            <a :href="instagram" target="_blank" rel="noopener noreferrer" @click="openInstagram" class="flex items-center gap-3 p-3 rounded-2xl bg-white/10 hover:bg-white/20 transition cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3z"/><path d="M12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zM12 9A3 3 0 1 1 12 15 3 3 0 1 1 12 9zM17.5 6.5a1 1 0 1 1 0 2 1 1 0 1 1 0-2z"/></svg>
               <div>
                 <div class="font-medium">Instagram</div>
@@ -65,5 +65,11 @@ function onSubmit() {
   // For demo purposes we just open WhatsApp with message
   const text = `Olá, sou ${form.name}. ${form.message}`
   window.open(`${whatsapp}?text=${encodeURIComponent(text)}`, '_blank')
+}
+
+// Função para garantir que o link abra corretamente
+function openInstagram(event) {
+  event.preventDefault()
+  window.open(instagram, '_blank', 'noopener,noreferrer')
 }
 </script>

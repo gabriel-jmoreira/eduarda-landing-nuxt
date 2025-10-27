@@ -5,7 +5,7 @@
       <span class="hidden lg:inline">WhatsApp</span>
     </a>
 
-    <a :href="instagram" target="_blank" class="flex items-center gap-3 px-4 py-3 rounded-full shadow-lg bg-pink-600 text-white hover:scale-[1.02] transition">
+    <a :href="instagram" target="_blank" rel="noopener noreferrer" @click="openInstagram" class="flex items-center gap-3 px-4 py-3 rounded-full shadow-lg bg-pink-600 text-white hover:scale-[1.02] transition cursor-pointer">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3z"/><path d="M12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zM12 9A3 3 0 1 1 12 15 3 3 0 1 1 12 9zM17.5 6.5a1 1 0 1 1 0 2 1 1 0 1 1 0-2z"/></svg>
       <span class="hidden lg:inline">Instagram</span>
     </a>
@@ -15,4 +15,10 @@
 <script setup>
 const whatsapp = "https://wa.me/5521982772521"
 const instagram = "https://www.instagram.com/eduardaayresadv/"
+
+// Função para garantir que o link abra corretamente
+function openInstagram(event) {
+  event.preventDefault()
+  window.open(instagram, '_blank', 'noopener,noreferrer')
+}
 </script>
